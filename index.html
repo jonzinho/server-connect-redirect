@@ -2,10 +2,62 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=steam://connect/80.75.221.5:28000">
-  <title>Redirecionando...</title>
+  <meta http-equiv="refresh" content="3; url=steam://connect/80.75.221.5:28000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalon - Redirecionamento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d1b2a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    a.button {
+      text-decoration: none;
+      background-color: #1b263b;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+    a.button:hover {
+      background-color: #415a77;
+    }
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #415a77;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 1rem;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecionando para o jogo. Se não for redirecionado automaticamente, <a href="steam://connect/80.75.221.5:28000">clique aqui</a>.</p>
+  <div class="spinner"></div>
+  <h1>Avalon HvH - Redirecionando...</h1>
+  <p>Aguarde enquanto você é redirecionado para o jogo.</p>
+  <p>Se o redirecionamento não ocorrer automaticamente, <a class="button" href="steam://connect/80.75.221.5:28000">clique aqui</a>.</p>
 </body>
 </html>
